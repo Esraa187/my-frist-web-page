@@ -12,8 +12,8 @@ jobs:
 
 
     steps:
-      - name: 'Testing github actions'
-        run: pwd
+      
+      - uses: actions/checkout@v3 
 
-      - name: 'Testing printing'
-        run: echo esraa  
+      - name: 'Listing list'
+        run: ls  
