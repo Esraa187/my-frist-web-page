@@ -16,3 +16,9 @@ jobs:
       
       - name: "Login to dockerhub"
         run: docker login --username ${{secrets.OS_NAME}} --password ${{secrets.OS_PASSWORD}}
+
+      - name: "Build image to docker"
+        run: docker build -t ${{secrets.OS_NAME}}/frist-img .  
+
+      - name: "Push image to docker"
+        run: docker push  ${{secrets.OS_NAME}}/frist-img     
