@@ -12,8 +12,7 @@ jobs:
 
 
     steps:
-      
       - uses: actions/checkout@v3 
-
-      - name: 'Listing list'
-        run: ls  
+      
+      - name: "Login to dockerhub"
+        run: docker login --username esraa123 --password dckr_pat_K8P3yKaCfds6_xNoL0hdyknIxLU 
